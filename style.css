@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/*-----Header-----*/
+@font-face {
+    src: url(Fonts/Ahsing-Regular.otf);
+    font-family: Ahsing;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    /*background-color:rgb(253, 238, 224);*/
+}
+
+.BusBG{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('images/RBLBN.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.logo {
+    cursor: pointer;
+    background-color: #08677f;
+    width: 340px;
+}
+
+.IDK{
+    margin-left: auto;
+}
+
+.Btn{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:rgb(253, 238, 224);
+    background-color: #08677f;
+    text-decoration: none;
+}
+
+ li,a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:rgb(253, 238, 224);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+header {
+    background-color: #08677f;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.nav_look{
+    list-style: none;
+    background-color: #08677f;
+}
+
+.nav_look li{
+    display: inline-block;
+    padding: 0px 12px
+}
+
+.nav_look li a{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.nav_look li a:hover {
+    color: #8ecfdf;
+}
+
+.Btn {
+    margin-left: 20px;
+    padding: 5px 20px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Btn:hover {
+    background-color: rgba(3, 126, 157, 0.8);
+}
+
+/*-----Body-----*/
+.HomePage {
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+    background-color: transparent;
+    color:rgb(253, 238, 224); 
+}
+
+.Welcome{
+    font-family: Ahsing;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.Offer{
+    font-size: 15px;
+}
+
+.FareClass{
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 100px;
+    background-color: #08677F;
+    color:rgb(253, 238, 224) ;
+}
+
+.FRCMain{
+    font-size: 60px;
+    padding-top: 50px;
+    font-weight: 490;
+    font-family: Ahsing;
+}
+
+.Fcol{
+    margin-bottom:10px;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+}
+
+.FigT{
+font-family: Ahsing;
+font-size: 35px;
+font-weight: 3px;
+}
+
+
+.fce{
+   margin: 20px;
+   width: 500px;
+   border-radius: 20px;
+}
+
+.fig1{
+border-radius: 20px;
+float: left;
+padding:10px ;
+background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+margin-left: auto;
+margin-right: 15px;
+}
+
+.dlx{
+   margin: 20px;
+   width: 500px;
+   border-radius: 20px;
+}
+
+.fig2{
+    border-radius: 20px;
+    padding: 10px;
+    float: right;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+
+.sdlx{
+    margin: 20px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.fig3{
+    border-radius: 20px;
+    padding:10px;
+    float: left;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.lux{
+    Margin: 20px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.fig4{
+    border-radius: 20px;
+    padding: 10px;
+    float: Right;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    margin-right: auto;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/*About*/
+
+.HMV{
+    padding: 70px;
+    background-color: #08677f;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    display: flex;    
+}
+
+.H1 {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    padding-bottom: 25px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.V2{
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    padding-bottom: 40px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.M3{
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    padding-bottom: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(255, 228, 228);
+}
+
+.History{
+    font-family: Ahsing;
+    font-size: 50px;
+    color: rgb(255, 228, 228);
+    background-color: transparent;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 500;
+}
+
+.Vision {
+    font-family: Ahsing;
+    font-size: 50px;
+    color: rgb(255, 228, 228);
+    background-color: transparent;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Mission {
+    font-family: Ahsing;
+    font-size: 50px;
+    color: rgb(255, 228, 228);
+    background-color: transparent;
+    padding: 20px;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.MM3{
+   float: right;
+   background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+   color: rgb(255, 228, 228);
+   border-radius: 20px;
+   padding-left: 70px;
+   padding-right: 70px;
+   width: 475px;
+   margin-top: 10px;
+}
+
+.VV2{
+    float: right;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    border-radius: 20px;
+    color: rgb(255, 228, 228);
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 475px;
+    margin-bottom: 10px;
+}
+
+.HH1{
+    text-align: center;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    margin-bottom: 100px;
+    border-radius: 20px;
+    color: rgb(255, 228, 228);
+    width: 1700px;
+
+}
+
+.VM{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Footer*/
+
+.H3{
+    font-weight: 5px;
+    font-family: montserrat;
+}
+
+.Footer{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    background-color: #d0402f;
+    font-family: montserrat;
+    color: rgb(255, 228, 228);
+
+}
+
+.Flogo{
+    width: 165px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.Frbl{
+    background-color: transparent;
+    font-family: Ahsing;
+    font-size: 40px;
+    color:  rgb(255, 255, 255);
+    padding-left: 0;
+}
+
+.slogan{
+    font-size: 13px;
+}
+
+.LnBL{
+    background-color: t #d0402f;
+    float: left;
+    width: 25%;
+    height: 230px;
+}
+    
+.Ofc{
+    background-color:  #d0402f;
+    font-size: 13px;
+    float: left;
+    width: 30%;
+    height: 230px;
+    padding-top: 30px;
+}
+
+.ConUs{
+    background-color:  #d0402f;
+    float: left;
+    width: 25%;
+    height: 230px;
+    font-size: 13px;
+    padding-top: 30px;
+}
+
+.mail{
+    font-size: 13px;
+    background: transparent;   
+}
+
+.Socials{
+    background-color:  #d0402f;
+    height: 230px;
+    width: 20%;
+    padding-top: 100px;
+    float: left;
+}
+
+.S{
+    width: 50px;
+}
+
+.SC{
+    background-color: transparent;
+}
+
+.VU{
+    margin-left: 50px;
+}
+
+.Crrbl{
+    font-size: 10px;
+}
+
+/*Destinations*/
+
+.DTN{
+    font-family: "Montserrat";
+    text-align: center;
+    background-color: #08677F;
+    color:rgb(253, 238, 224) ;
+    padding: 100px;
+}
+
+.DTN2{
+    display: flex;
+}
+    
+
+.Terminal{
+    font-size: 60px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    font-weight: 490;
+    font-family: Ahsing;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 228, 228);
+    
+}
+
+.TMN1{
+    margin: auto;
+    width: 500px;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 20px;
+    padding-bottom: auto;
+    
+}
+
+.TMN{
+    font-family:"Montserrat";
+    color: rgb(255, 228, 228);
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Schedule */
+
+.BS{
+    font-size: 60px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    font-weight: 490;
+    font-family: Ahsing;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 228, 228);
+}
+
+.Table {
+    border-radius: 5;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid rgb(255, 228, 228);
+  }
+
+  th{
+    background-color:  #d0402f; 
+    border-radius: 5;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+  }
+
+.Table{
+    font-family: "Montserrat";
+    border-collapse: collapese;
+    size: 500px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/* CONTACTS */
+
+.Cont{
+    font-family:"Montserrat";
+    color: rgb(255, 228, 228);
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 100px;
+
+}
+
+.Cont1{
+    float: left;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    margin-left: auto;
+    margin-right: 15px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    padding-bottom: auto;
+}
+
+.Cont2{
+    float: left;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    margin-right: auto;
+    margin-left: 15px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    padding-bottom: 90px;
+}
+
+
+/* Book Now*/
+
+.BK{
+    padding: 30px;
+    font-family: "Montserrat";
+    text-align: center;
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.Fname{
+    font-family: sans-serif;
+}
+
+.Fh1{
+    font-family: Ahsing;
+    font-size: 45px;
+    color: rgb(255, 228, 228);
+    background-color: transparent;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Terms{
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+
+label{
+    font-family: "Ahsing";
+    color: rgb(255, 228, 228) ;
+    font-weight: 5px;
+}
+
+select, .Reg{
+    padding-right: 50px;
+}
+select, .Reg{
+    size: 50px;
+    padding: 5px;
+    border-radius: 30px;
+    font-family: "Montserrat";
+    background-color: rgb(253, 238, 224);
+    border: none;
+}
+
+.InB{
+    size: 50px;
+    padding: 5px;
+    border-radius: 30px;
+    font-family: "Montserrat";
+    background-color: rgb(253, 238, 224);
+    border: none;
+    padding-left: 5px;
+}
+
+.log1{
+    padding: 20px;
+    margin-right: 60px;  
+}
+
+.log2{
+    padding: 20px;
+} 
+
+.log3{
+    padding: 20px;
+    margin-right: 50px;
+} 
+
+.log4{
+    padding-top: 20px;
+    margin-right: 35px;
+    padding-bottom: 50px;
+}
+
+.Hacc{
+    padding: 20px;
+}
+
+.Fin{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Fin12{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.Fin1{
+    float: left;
+    margin-left: 30px;
+}
+
+.Fin2{
+    float: right;
+    margin-left: 185px;
+}
+
+.Fin34{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Fin3{
+    float: left;
+    margin-left: 30px;
+}
+
+
+.Fin4{
+    float: right;
+    margin-left: 90px;
+}
+
+.Fin5{
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.LFont{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:rgb(253, 238, 224); 
+}
+
+.Fnd{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:rgb(253, 238, 224);
+    background-color: #d0402f;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 9px 100px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.Booksite{
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #08677F;
+}
+
+.LSB{
+    color: #d0402f;
+}
+
+/*map*/
+#map{
+          height: 500px;
+          width:600px; 
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+.TermiMap{
+    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    margin-top: 50px;
+    display: flex;
+    border-radius: 20px;
+    padding:40px;
+}
+
+.TButtons{
+    float: left;
+    width:500px;
+    height:auto;
+  
+}
+
+button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f5f5f7;
+    text-decoration: none;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+.TerB1{
+    background-color: #08677F;
+    padding: 20px 105px;
+}
+
+.TerB2{
+    background-color: #08677F;
+    padding: 20px 95px;
+}
+
+.TerB3{
+    background-color: #08677F;
+    padding: 20px 100px;
+}
+
+.TerB4{
+    background-color: #08677F;
+    padding: 20px 100px;
+}
+
+.TerB5{
+    background-color: #08677F;
+    padding: 20px 110px;
+}
+
+.TerB6{
+    background-color: #08677F;
+    padding: 20px 95px;
+}
+
+.TerBT{
+    background-color: #d0402f;
+    padding: 20px 120px;
+}
+
+.Tmap{
+    float: left;
+    margin:auto ;
+}
+
+.DTL{
+    align-items: center;
+}

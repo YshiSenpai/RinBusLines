@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <style>
+      #map 
+    .leaflet-control-container .leaflet-routing-container-hide {
+        display: none;
+    }
+  </style>
+    <title>Group 8</title>
+    <head>
+        <body>
+
+            <section class="BusBG">
+               <header>
+               <a href ="index.html"><img class ="logo" src ="images/RBLPNG.png" ></a>
+               <div class="IDK"></div>
+               <nav>
+                   <ul class ="nav_look">
+                       <li><a href ="index.html">Home</a></li>
+                       <li><a href ="2About.html">About</a></li>
+                       <li><a href ="3Destinations.html">Destinations</a></li>
+                       <li><a href ="4Sched.html">Schedule</a></li>
+                       <li><a href ="5Contact.html">Contact</a></li>
+                   </ul>
+               </nav>
+                 <a class = "btc" href="6Book.html"><button class="Btn">Book Now</button></a>
+               </header>
+                 <div class ="HomePage" >
+                     <h1 class = "Welcome">Destinations</h1> <br>
+                     <p>Where to Sir/Ma'am?</p>
+                 </div>
+             </section>
+                   
+             <section class="DTN">
+              <div>
+              <h1 class = "Terminal">Terminals</h1><br>
+              </div>
+             <div class="DTN2">
+              <div class="TMN1">
+                <p><b>RBL Cubao Terminal</b><br>816 Aurora Blvd, Cubao, Quezon City, <br>Metro Manila</p><br><br>
+                  <p><b>RBL Pasay Terminal</b><br>2230 Aurora Blvd. corner Tramo St., <br>Pasay City, Metro Manila</p><br><br>
+                    <p><b>RBL Baguio Terminal</b><br>Governor Pack Rd, Baguio City, Benguet</p><br><br>
+                    <p><b>RBL Abra Terminal</b><br>456 Park Avenue, Bangued, Abra</p></p><br><br>
+                        <p><b>RBL Vigan Terminal</b><br>Tamag, Bantay, Ilocos Sur</p><br><br>
+                          <p><b>RBL Laoag Terminal</b><br>49 Abadilla St, Laoag City, Ilocos Norte</p><br><br>
+                            <p><b>RBL La Union Terminal</b><br>12 Main St, San Juan, La Union</p><br><br>
+                            <p><b>RBL Candon Terminal</b><br>National Highway, Candon, 2710 Ilocos Sur</p><br><br>
+               </div>
+              </div>
+
+
+
+
+
+
+
+
+
+              <div  id="TMP"></div>
+               <div class="TermiMap">
+                
+                <div class="TButtons">
+
+                  <div>
+                    <a href="3DLA.html#TMP"><button class="TerB1">Laoag - Abra</button></a>
+                  </div>
+              
+                  <div >
+                    <a href="3DLB.html#TMP"><button class="TerB2">Laoag - Baguio</button></a>
+                  </div>
+
+                  <div>
+                    <a href="3DLC.html#TMP"><button class="TerB3">Laoag - Cubao</button></a>
+                  </div>
+
+                  <div>
+                    <a href="3DLP.html#TMP"><button class="TerB4">Laoag - Pasay</button></a>
+                  </div>
+
+                  <div>
+                    <a href="3DAP.html#TMP"><button class="TerB5">Abra - Pasay</button></a>
+                  </div>
+
+                  <div>
+                    <a href="3DBP.html#TMP"><button class="TerB6">Baguio - Pasay</button></a>
+                  </div>
+                  <div>
+                    <a href="3Destinations.html#TMP"><button class="TerBT">Terminals</button></a>
+                  </div>
+
+                </div>
+                
+               <div class="Tmap">
+                <h1 class="DTL"> Laoag to Abra</h1><br><br>
+                <div id="map"></div>
+
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+
+                <script>
+                  var map = L.map('map').setView([16.413569,  120.596703], 7); 
+                  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  }).addTo(map);
+              
+                  
+                  var startMarker = L.marker([18.2264, 120.5893]).addTo(map);
+                  var endMarker = L.marker([17.599547, 120.610617]).addTo(map);
+                  
+                  var control = L.Routing.control({
+                    show: false,
+                    addWaypoints: false,
+                    draggableWaypoints: false,
+                    fitSelectedRoutes: false,
+                    waypoints: [
+                      L.latLng(18.2264, 120.5893), 
+                      L.latLng(17.599547, 120.610617),
+                  ],
+                    routeWhileDragging: true
+                  }).addTo(map);
+              
+                  
+                  control.onAdd = function(map) {
+                    this._container = L.DomUtil.create('div');
+                    return this._container;
+                  }
+              
+                  startMarker.bindTooltip('RBL Laoag Terminal', { permanent: true }).openTooltip();
+                  endMarker.bindTooltip('RBL Abra Terminal', { permanent: true }).openTooltip();
+              
+                  
+                  
+              
+                </script>
+          </div>
+           </div>
+
+
+
+            </section>
+              </body>
+            <footer class="Footer">
+         
+              <div>
+                <div class="LnBL">
+                  <img class ="Flogo" src ="images/FTL.png"><br>
+                  <p class="Frbl">Rin Bus Lines</p><br>
+                  <p class="slogan">Traveling doesn't have to be a hassle.<br>
+                    Our comfortable buses and friendly<br>
+                    drivers make your journey a breeze.</p>
+                </div>
+        
+                <div class = "Ofc">
+                  <div>
+                    <h3 class="H3">Main office</h3><br>
+                    <p>• 460 Quintin Paredes Rd, Sto. Domingo, Ilocos Sur</p><br><br>
+                    <h3 class="H3">Alt. Office</h3><br>
+                    <p>• III, Quezon Ave, Vigan City, Ilocos Sur<br>
+                      • J9FV+HF6, National Highway, San Ildefonso, Ilocos Sur</p>
+                  </div>
+                  </div>
+        
+                  <div class="ConUs">
+                    <h3 class="H3">Contact us</h3><br>
+                    <a class="mail" href="mailto:rinbusline@gmail.com">• rinbuslines@gmail.com</a>
+                    <p>• +63 945 3218 237</p>
+                  </div>
+        
+                  <div class="Socials">
+                    <a class ="SC"href ="https://web.facebook.com/lawrenz.rin"><img class ="S" src="images/FB.png"></a>
+                    <a class ="SC"href ="https://www.Instagram.com/"><img class ="S" src="images/INST.png"></a>
+                    <a class ="SC"href ="https://www.Twitter.com/"><img class ="S" src="images/TWT.png"></a>
+                   <p class="VU">Visit Us</p>
+                  </div>
+                    <br><hr><br>
+                   <div>
+                     <div>
+                       <p class="Crrbl">© All Rights Reserved. Rin Bus Lines, Inc. 2023.</p>
+                     </div>
+                  </div>
+              </div>
+        
+            </footer>
+                <script> src = "main.js"</script>   
+          
+           </body>
+        </html>
