@@ -12,6 +12,10 @@
     /*background-color:rgb(253, 238, 224);*/
 }
 
+body{
+    width: 10%;
+}
+
 .BusBG{
     min-height: 100vh;
     width: 100%;
