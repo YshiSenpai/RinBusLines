@@ -24,7 +24,7 @@
 
 .logo {
     cursor: pointer;
-    background-color: #08677f;
+    background-color: transparent;
     width: 340px;
 }
 
@@ -37,7 +37,7 @@
     font-weight: 500;
     font-size: 15px;
     color:rgb(253, 238, 224);
-    background-color: #08677f;
+    background-color: transparent;
     text-decoration: none;
 }
 
@@ -51,16 +51,21 @@
 }
 
 header {
-    background-color: #08677f;
+    background-color: #00000076;
+    /*background-color: #08677f5e;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 10%;
+    padding: 0px 10%;
+    position: fixed;
+    width: 100%;
+    transition: top 0.2s ease;
+    top:0px;
 }
 
 .nav_look{
     list-style: none;
-    background-color: #08677f;
+    background-color: transparent;
 }
 
 .nav_look li{
@@ -115,7 +120,6 @@ header {
 .FareClass{
     font-family: "Montserrat";
     text-align: center;
-    padding: 100px;
     background-color: #08677F;
     color:rgb(253, 238, 224) ;
 }
@@ -127,11 +131,15 @@ header {
     font-family: Ahsing;
 }
 
+.IMGBG{
+    padding-bottom: 200px;
+}
+
 .Fcol{
-    margin-bottom:10px;
-    overflow: hidden;
     display: flex;
     margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .FigT{
@@ -143,65 +151,18 @@ font-weight: 3px;
 
 .fce{
    margin: 20px;
-   width: 500px;
+   width: 400px;
    border-radius: 20px;
 }
 
-.fig1{
-border-radius: 20px;
-float: left;
-padding:10px ;
-background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
-margin-left: auto;
-margin-right: 15px;
-}
-
-.dlx{
-   margin: 20px;
-   width: 500px;
-   border-radius: 20px;
-}
-
-.fig2{
+.fig{
+    width: fit-content;
     border-radius: 20px;
-    padding: 10px;
-    float: right;
-    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
-    margin-right: auto;
-    margin-left: 15px;
-}
-
-
-.sdlx{
-    margin: 20px;
-    width: 500px;
-    border-radius: 20px;
-}
-
-.fig3{
-    border-radius: 20px;
-    padding:10px;
-    float: left;
+    padding:10px ;
     background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
     margin-left: auto;
-    margin-right: 15px;
-    margin-top: 20px;
-}
-
-.lux{
-    Margin: 20px;
-    width: 500px;
-    border-radius: 20px;
-}
-
-.fig4{
-    border-radius: 20px;
-    padding: 10px;
-    float: Right;
-    background:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
     margin-right: auto;
-    margin-left: 15px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*About*/
@@ -780,3 +741,9 @@ button{
 .DTL{
     align-items: center;
 }
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px) {
+    .fig{width: 100%;}
+  }
