@@ -749,6 +749,6 @@ button{
 /*Responsive*/
 
 @media only screen and (max-width: 600px) {
-    .fig .footer .body{width: 100%;}
+    .fig{width: 100%;}
     .navbar{display: none;}
   }
