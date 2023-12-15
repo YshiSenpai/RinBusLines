@@ -21,7 +21,7 @@
     background-position: center;
     position: relative;
     top: 0%;
-    
+    background-attachment: fixed;
 }
 
 .logo {
@@ -30,8 +30,9 @@
     width: 340px;
 }
 
-.IDK{
-    margin-left: auto;
+#navR{
+   right: 0px;
+   margin-left: auto;
 }
 
 .Btn{
@@ -41,6 +42,13 @@
     color:rgb(253, 238, 224);
     background-color: transparent;
     text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 20px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
  li,a {
@@ -53,12 +61,12 @@
 }
 
 header {
+     z-index: 3;
     background-color: #00000076;
-    /*background-color: #08677f5e;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0px 10%;
+    padding: 0px 5%;
     position: fixed;
     width: 100%;
     transition: top 0.2s ease;
@@ -68,11 +76,18 @@ header {
 .nav_look{
     list-style: none;
     background-color: transparent;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 610px;
+}
+
+li{
+    margin-top: 24px;
 }
 
 .nav_look li{
     display: inline-block;
-    padding: 0px 12px
+    padding: 0px 12px;
 }
 
 .nav_look li a{
@@ -82,16 +97,6 @@ header {
 
 .nav_look li a:hover {
     color: #8ecfdf;
-}
-
-.Btn {
-    margin-left: 20px;
-    padding: 5px 20px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 60px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
 
 .Btn:hover {
@@ -766,4 +771,7 @@ button{
      .fce{border-radius: 15px;}
     #fcontainer .fc1 .fc2 .fc3 .Socials{width: 100%; justify-content: center; text-align: center;}
 
+    .nav_look{
+        display: none;
+    }
   }
