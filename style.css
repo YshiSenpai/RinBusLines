@@ -69,7 +69,7 @@ header {
     padding: 0px 5%;
     position: fixed;
     width: 100%;
-    transition: top 0.2s ease;
+    transition: top 0.4s ease;
     top:0px;
 }
 
@@ -114,10 +114,11 @@ li{
     color:rgb(253, 238, 224); 
 }
 
-.Welcome{
+.Wel{
     font-family: Ahsing;
     font-size: 70px;
     font-weight: 500;
+    padding-top: 80px;
 }
 
 .Offer{
@@ -763,15 +764,53 @@ button{
     align-items: center;
 }
 
+/*Burger*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  #menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+  }
+  
+
 /*Responsive*/
 
 @media only screen and (max-width: 600px) {
-    body{overflow-x: hidden;width: 100%;}
-     .fig{max-width: 100%; height: auto; margin: 10px; border-radius: 15px;}
-     .fce{border-radius: 15px;}
-    #fcontainer .fc1 .fc2 .fc3 .Socials{width: 100%; justify-content: center; text-align: center;}
+    .Wel{
+        font-size:50px;
+    }
+    body{overflow-x: hidden;width: 100%;
+    }
+     
+    .fig{
+        max-width: 100%; height: auto; margin: 10px; border-radius: 15px;
+    }
+     
+     .fce{border-radius: 15px;
+    }
+
+    #fcontainer .fc1 .fc2 .fc3 .Socials{width: 100%; justify-content: center; text-align: center;
+    }
 
     .nav_look{
         display: none;
+    }
+
+    .logo{
+        width:200px; padding: 15px;
     }
   }
