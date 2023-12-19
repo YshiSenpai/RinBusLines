@@ -13,7 +13,7 @@
 }
 
 .BusBG{
-    min-height: 100vh;
+    min-height: 99.9vh;
     width: 100%;
     background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('images/RBLBN.png');
     background-size: cover;
@@ -30,7 +30,7 @@
     width: 340px;
 }
 
-#navR{
+.navR{
    right: 0px;
    margin-left: auto;
 }
@@ -49,6 +49,12 @@
     border-radius: 60px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-bottom: 10px;
+}
+
+.btc{
+    margin-right: 10px;
+    padding-top:10px ;
 }
 
  li,a {
@@ -74,6 +80,7 @@ header {
 }
 
 .nav_look{
+    display: flex;
     list-style: none;
     background-color: transparent;
     flex-wrap: wrap;
@@ -82,7 +89,7 @@ header {
 }
 
 li{
-    margin-top: 24px;
+    margin-top: 15px;
 }
 
 .nav_look li{
@@ -103,7 +110,16 @@ li{
     background-color: rgba(3, 126, 157, 0.8);
 }
 
-/*-----Body-----*/
+/*Burger menu*/
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/*Body*/
 .HomePage {
     font-family: "Montserrat", sans-serif;
     width: 80%;
@@ -707,7 +723,7 @@ select, .Reg{
   
 }
 
-button{
+/*button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -719,7 +735,7 @@ button{
     cursor: pointer;
     margin: 10px;
     
-}
+}*/
 
 .TerB1{
     background-color: #08677F;
@@ -791,6 +807,56 @@ nav {
 /*Responsive*/
 
 @media only screen and (max-width: 600px) {
+    .burger{
+        display: block;
+        margin-left: 95px;
+    }
+
+    .burger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navR{
+        position: fixed;
+        top:73.6px;
+        gap:0;
+        flex-direction: column;
+        background-color: #00000076;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        transform: translateX(-100%);
+    }
+    
+    .navR--open{
+        transform: translateX(0);
+    }
+
+    .nav_look{
+        flex-direction: column;
+    }
+    .bar{
+        background-color: #f5f5f7;
+        border-radius: 2px;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Nmenu{
+        margin: 16px 0;
+    }
+
     .Wel{
         font-size:50px;
     }
@@ -805,10 +871,6 @@ nav {
     }
 
     #fcontainer .fc1 .fc2 .fc3 .Socials{width: 100%; justify-content: center; text-align: center;
-    }
-
-    .nav_look{
-        display: none;
     }
 
     .logo{
