@@ -13,17 +13,13 @@
     overflow-x: hidden;
 }
 
-body{
-    background-color: rgba(0,136,169,1);
-}
-  
+ 
 .BusBG{
     min-height: 100vh;
     width: 100%;
     background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('images/RBLBN.png');
     background-size: cover;
     background-position: center;
-    position: relative;
     top: 0%;
     background-attachment: fixed;
     background-color: rgba(0,136,169,1);
