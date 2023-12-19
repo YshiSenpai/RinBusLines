@@ -12,6 +12,10 @@
     padding:0;
     overflow-x: hidden;
 }
+
+body{
+    background-color: rgba(0,136,169,1);
+}
   
 .BusBG{
     min-height: 100vh;
