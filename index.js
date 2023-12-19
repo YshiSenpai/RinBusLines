@@ -17,7 +17,7 @@ const BEl = document.querySelector(".burger");
 
 BEl.addEventListener("click", () => {
   navEl.classList.toggle(".nav--open");
-  BEl.classList.toggle(".burger.active");
+  BEl.classList.toggle(".active");
 });
 
 BEl.addEventListener("click", () => {

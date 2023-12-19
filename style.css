@@ -810,6 +810,7 @@ nav {
     .burger{
         display: block;
         margin-left: 95px;
+        transition: all 0.4s ease;
     }
 
     .burger.active .bar:nth-child(2){
@@ -835,9 +836,9 @@ nav {
         transition: 0.3s;
         transform: translateX(-100%);
     }
-    
+
     .navR--open{
-        transform: translateX(0);
+        transform: translateX(0) !important; 
     }
 
     .nav_look{
@@ -850,7 +851,7 @@ nav {
         height: 3px;
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        transition: left 0.3s ease-in-out;
     }
 
     .Nmenu{
