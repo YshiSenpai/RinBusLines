@@ -15,13 +15,13 @@ window.onscroll = function() {
 const navEl = document.querySelector(".navR");
 const BEl = document.querySelector(".burger");
 
-BEl.addEventListener("click", () => {
-  navEl.classList.toggle(".nav--open");
-  BEl.classList.toggle(".active");
+BEl.addEventListener('click', () => {
+  navEl.classList.toggle('open');
+  BEl.classList.toggle('active');
 });
 
-BEl.addEventListener("click", () => {
-  navEl.classList.remove(".nav--open");
-  BEl.classList.remove(".burger.active");
+BEl.addEventListener('click', () => {
+  navEl.classList.remove('nav--open');
+  BEl.classList.remove('.burger.active');
 });
 

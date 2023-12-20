@@ -834,11 +834,11 @@ nav {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        transform: translateX(-100%);
+        transform: translateX(200%);
     }
 
-    .navR--open{
-        transform: translateX(0) !important; 
+    .open{
+        transform: translateX(0%) !important; 
     }
 
     .nav_look{
