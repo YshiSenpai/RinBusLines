@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
     <style>
       #map 
@@ -12,27 +11,33 @@
         display: none;
     }
   </style>
-    <title>Group 8</title>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="icon" type="image/png" href="images/RBLicon.png">
+  <title>RinBusLines</title>
     <head>
         <body>
 
             <section class="BusBG">
-               <header>
-               <a href ="index.html"><img class ="logo" src ="images/RBLPNG.png" ></a>
-               <div class="IDK"></div>
-               <nav>
-                   <ul class ="nav_look">
-                       <li><a href ="index.html">Home</a></li>
-                       <li><a href ="2About.html">About</a></li>
-                       <li><a href ="3Destinations.html">Destinations</a></li>
-                       <li><a href ="4Sched.html">Schedule</a></li>
-                       <li><a href ="5Contact.html">Contact</a></li>
-                   </ul>
-               </nav>
-                 <a class = "btc" href="6Book.html"><button class="Btn">Book Now</button></a>
-               </header>
+              <header id="navbar">
+                <a href ="index.html"><img class ="logo" src ="images/RBLPNG.png" ></a>
+                    <nav class="navR">
+                      <ul class ="nav_look">
+                          <li class="Nmenu"><a href ="index.html">Home</a></li>
+                          <li class="Nmenu"><a href ="2About.html">About</a></li>
+                          <li class="Nmenu"><a href ="3Destinations.html">Destinations</a></li>
+                          <li class="Nmenu"><a href ="4Sched.html">Schedule</a></li>
+                          <li class="Nmenu"><a href ="5Contact.html">Contact</a></li>
+                          <a class = "btc" href="6Book.html"><button class="Btn">Book Now</button></a>
+                      </ul>
+                    </nav> 
+                    <div class="burger">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </div>
+              </header>
                  <div class ="HomePage" >
-                     <h1 class = "Welcome">Destinations</h1> <br>
+                     <h1 class = "Wel">Destinations</h1> <br>
                      <p>Where to Sir/Ma'am?</p>
                  </div>
              </section>
@@ -193,6 +198,6 @@
         
             </footer>
                 <script> src = "main.js"</script>   
-          
+                <script src="index.js"></script>
            </body>
         </html>

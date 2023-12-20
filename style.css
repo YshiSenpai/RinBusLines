@@ -781,6 +781,9 @@ select, .Reg{
     align-items: center;
 }
 
+.leaflet-control-container .leaflet-routing-container-hide {
+    display: none;
+}
 /*Burger*/
 nav {
     display: flex;
@@ -810,7 +813,7 @@ nav {
     .burger{
         display: block;
         margin-left: 95px;
-        transition: all 0.4s ease;
+        transition: all 0.1s ease;
     }
 
     .burger.active .bar:nth-child(2){
@@ -851,7 +854,7 @@ nav {
         height: 3px;
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
-        transition: left 0.3s ease-in-out;
+        transition:all 0.2s ease-in-out;
     }
 
     .Nmenu{
