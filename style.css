@@ -25,6 +25,7 @@
 }
 
 .logo {
+    margin-top: 10px;
     cursor: pointer;
     background-color: transparent;
     width: 340px;
@@ -810,6 +811,11 @@ nav {
 /*Responsive*/
 
 @media only screen and (max-width: 600px) {
+
+    a{
+        font-size: 20px;
+        padding:15px 160px;
+    }
     .burger{
         display: block;
         margin-left: 95px;
@@ -833,7 +839,7 @@ nav {
         top:73.6px;
         gap:0;
         flex-direction: column;
-        background-color: #00000076;
+        background-color: #1D1D1F;
         width: 100%;
         text-align: center;
         transition: 0.3s;
